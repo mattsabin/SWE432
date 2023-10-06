@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Add songs Screen</title>
+    <style>
+ body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar-buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-search-bar {
+    width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            width: 50%;
+            height: 75%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #3498db;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .add-button {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .play-bar {
+    width: 100%;
+    height: 50px; /* Adjust the height as needed */
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-buttons-container">
+            <div class="navbar-buttons">
+                <button class="navbar-button">Button 1</button>
+                <button class="navbar-button">Button 2</button>
+                <button class="navbar-button">Button 3</button>
+            </div>
+        </div>
+        <input type="text" class="nav-search-bar" placeholder="Search...">
+    </div>
+    <div class="play-bar">
+        <p>Currently Playing</p>
+    </div>
+    <div class="container">
+        <h1>Add Songs</h1>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <ul>
+            <li>
+                Song Result
+                <input type="checkbox" class="checkbox">
+            </li>
+            <li>
+                Song Result
+                <input type="checkbox" class="checkbox">
+            </li>
+            <li>
+                Song Result
+                <input type="checkbox" class="checkbox">
+            </li>
+            <li>
+                Song Result
+                <input type="checkbox" class="checkbox">
+            </li>
+            <li>
+                Song Result
+                <input type="checkbox" class="checkbox">
+            </li>
+            <li>
+                Song Result
+                <input type="checkbox" class="checkbox">
+            </li>
+        </ul>
+        <button class="add-button">Add Songs</button>
+        <dialog id="add songs dialog">
+            <p>Songs added.</p>
+            <button id="closeDialogButton">Close</button>
+        </dialog>
+    </div>
+</body>
+</html>
